@@ -1,0 +1,73 @@
+# printing keys details 
+print('The frozen set is:', key)
+# creating a list  
+favourite_subject = ["OS", "DBMS", "Algo"] 
+  
+# making it frozenset type 
+f_subject = frozenset(favourite_subject) 
+  
+# below line will generate error 
+  
+f_subject[1] = "Networking"
+
+
+
+
+
+class Triangle:
+
+    def __init__(self, a, b, c):
+        
+        self.a = float(a)
+        self.b = float(b)
+        self.c = float(c)
+       
+    def area(self):
+        
+        s = (self.a+self.b+self.c) / 2
+        area = float(round((s*(s-self.a)*(s-self.b)*(s-self.c))**0.5, 2))
+        return area
+
+side1 = float(input("Enter length of first side : "))
+side2 = float(input("Enter length of second side : "))
+side3 = float(input("Enter length of third side : "))
+
+t1 = Triangle(side1,side2,side3)
+print('area = ', t1.area())
+
+
+
+
+if type(x) == str:
+        y = x.split(",")
+    
+    else:
+        y = x
+    
+    c = list(map(lambda y:len(y), y))
+    print("List =", y, "\nLength of words ", end = "= ")
+    print(c)
+    print()
+
+
+list1 = [i * j for j in ['x', 'y', 'z'] for i in range(1, 5)]
+list1
+
+
+list3 = [[i + j for j in [0, 1, 2, 3]] for i in range(2, 6)]
+list3
+===============
+list3 = [[i + j for j in [0, 1, 2, 3]] for i in range(2, 6)]
+list3
+
+
+
+for i in range(0,9):
+    if(i <= 4):
+        for j in range(0,i+1):
+            print("*", end=" ")
+        print("\n")
+    else:
+        for j in range(i,9):
+            print("*", end=" ")
+        print("\n")
